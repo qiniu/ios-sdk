@@ -18,6 +18,7 @@
             filePath:(NSString *)file
           customMeta:(NSString *)customMeta
       callbackParams:(id)callbackParams
+            customer:(NSString *)customer
 {
     NSLog(@"\nSending request...\nurl:%@\ntable name:%@\nkey:%@\nmimeType:%@\nfile:%@\ncustomMeta:%@\ncallbackParams:%@\n", 
           url, tableName,key, mimeType, file, customMeta, callbackParams);
@@ -54,6 +55,11 @@
                              fileName:nil 
                           contentType:nil];
     }
+
+    [multipart addMultipartToBody:[customer dataUsingEncoding:NSASCIIStringEncoding]
+                             name:@"customer" 
+                          fileName:nil 
+                      contentType:nil];
     
     [multipart addLastMultipartToBody:[NSData dataWithContentsOfFile:file]
                                  name:@"file" 

@@ -17,6 +17,9 @@ const char* QBOX_IO_HOST				= "http://iovip.qbox.me";
 const char* QBOX_FS_HOST				= "https://fs.qbox.me";
 const char* QBOX_RS_HOST				= "http://rs.qbox.me:10100";
 const char* QBOX_UP_HOST				= "http://up.qbox.me";
+const char* QBOX_WM_HOST				= "";
+const char* QBOX_PU_HOST				= "";
+
 
 /*============================================================================*/
 
