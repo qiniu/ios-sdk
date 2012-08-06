@@ -263,6 +263,7 @@ QBox_Error QBox_Client_CallWithBuffer(
 QBox_Error QBox_Client_CallWithForm(
 	QBox_Client* self, QBox_Json** ret, const char* url, const char* body, QBox_Int64 bodyLen)
 {
+	QBox_Error err;
 	QBox_Header* headers = NULL;
 
 	QBox_Client_initcall(self, url);
@@ -279,11 +280,11 @@ QBox_Error QBox_Client_CallWithForm(
 	if (err.code != 200) {
 		return err;
 	}
-    
-    //NSLog(@"Authorization: %@", headers);
-    [request setValue:headers forHTTPHeaderField:@"Authorization"];
 
-	err = QBox_callex(request, &self->b, &self->root, QBox_False);
+	//NSLog(@"Authorization: %@", headers);
+	[self->request setValue:headers forHTTPHeaderField:@"Authorization"];
+
+	err = QBox_callex(self->request, &self->b, &self->root, QBox_False);
 
 	*ret = self->root;
 	return err;
