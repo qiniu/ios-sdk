@@ -259,6 +259,39 @@ QBox_Error QBox_Client_CallWithBuffer(
 	return QBox_Client_callWithBody(self, ret, url, bodyLen, self->request, headers);
 }
 
+
+QBox_Error QBox_Client_CallWithForm(
+	QBox_Client* self, QBox_Json** ret, const char* url, const char* body, QBox_Int64 bodyLen)
+{
+	QBox_Error err;
+	QBox_Header* headers = NULL;
+
+	QBox_Client_initcall(self, url);
+
+	NSData *postData = [NSData dataWithBytes:body length:bodyLen];
+	NSString *postLength = [NSString stringWithFormat:@"%lld", bodyLen];
+
+	[self->request setValue:postLength forHTTPHeaderField:@"Content-Length"];
+	[self->request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+	[self->request setHTTPBody:postData];
+
+
+	err = self->vptr->Auth(self->auth, &headers, url, body, bodyLen);
+	if (err.code != 200) {
+		return err;
+	}
+
+	//NSLog(@"Authorization: %@", headers);
+	[self->request setValue:headers forHTTPHeaderField:@"Authorization"];
+
+	err = QBox_callex(self->request, &self->b, &self->root, QBox_False);
+
+	*ret = self->root;
+	return err;
+}
+
+
+
 QBox_Error QBox_Client_Call(QBox_Client* self, QBox_Json** ret, const char* url)
 {
 	QBox_Error err;

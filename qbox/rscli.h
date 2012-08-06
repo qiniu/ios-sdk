@@ -18,7 +18,8 @@
              mimeType:(NSString *)mimeType
              filePath:(NSString *)file
            customMeta:(NSString *)customMeta
-       callbackParams:(id)callbackParams;
+       callbackParams:(id)callbackParams
+            customer:(NSString *)customer;
 
 + (QBox_Error)resumablePutFile:(NSString *)upToken    
                      tableName:(NSString *)tableName
