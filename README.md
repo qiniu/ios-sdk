@@ -14,15 +14,20 @@ QiniuSimpleUploader类提供了简单易用的iOS端文件上传功能。它的�
 
 	// 创建一个QiniuSimpleUploader实例。
 	// 需要保持这个变量，以便于用户取消某一个上传过程，通常创建的实例会保存为ViewController的成员变量。
-	_uploader = [[QiniuSimpleUploader uploaderWithToken:token] retain];
+	_uploader = [[QiniuSimpleUploader alloc] initWithToken:token];
 	
 	// 设置消息器，消息接收器必须实现接口QiniuUploadDelegate。	
 	_uploader.delegate = self;
   
 	// 开始上传  
 	[_uploader upload:filePath bucket:bucket key:key extraParams:nil];
+
+	// ...
+
+        // 释放资源
+	[_uploader release];
 	
-如本例所示，如果我们需要保持该实例，我们需要手动的调用retain和release来避免内存出错或泄漏。
+如本例所示，如果我们需要释放该实例，我们需要手动的调用release来避免内存泄漏。
 
 这个例子里
 
@@ -32,13 +37,18 @@ QiniuResumableUploader的使用方法与QiniuSimpleUploader完全一致。两者
 
 	// 创建一个QiniuResumableUploader实例。
 	// 需要保持这个变量，以便于用户取消某一个上传过程，通常创建的实例会保存为ViewController的成员变量。
-	_uploader = [[QiniuResumableUploader uploaderWithToken:token] retain];
+	_uploader = [[QiniuResumableUploader alloc] initWithToken:token];
 	
 	// 设置消息器，消息接收器必须实现接口QiniuUploadDelegate。	
 	_uploader.delegate = self;
   
 	// 开始上传  
 	[_uploader upload:filePath bucket:bucket key:key extraParams:nil];
+
+	// ...
+
+        // 释放资源
+	[_uploader release];
 
 ### 关于extraParams
 

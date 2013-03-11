@@ -15,15 +15,12 @@
 
 // NOTE: Please replace with your own accessKey/secretKey.
 // You can find your keys on https://dev.qiniutek.com/ ,
-//#define kAccessKey @"<Please specify your access key>"
-//#define kSecretKey @"<Please specify your secret key>"
-#define kAccessKey @"PeqiDoOcktrTwC9b2-AETWUllWaRvwmUT2cEZdeM"
-#define kSecretKey @"zdaR2wST8sopSBvtLEkUtXF1oQ_J3IQnZ_honQjL"
+#define kAccessKey @"<Please specify your access key>"
+#define kSecretKey @"<Please specify your secret key>"
 
 // NOTE: You need to replace value of kBucketValue with the key of an existing bucket.
 // You can create a new bucket on https://dev.qiniutek.com/ .
-//#define kBucketName @"<Please specify your bucket name>"
-#define kBucketName @"hugh"
+#define kBucketName @"<Please specify your bucket name>"
 
 @interface QiniuViewController ()
 
