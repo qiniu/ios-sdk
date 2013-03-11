@@ -6,7 +6,7 @@ title: iOS SDK | 七牛云存储
 
 SDK下载地址：[https://github.com/qiniu/ios-sdk](https://github.com/qiniu/ios-sdk)
 
-本SDK目前只提供了一个简单版本的上传功能，在类QiniuSimpleUploader中实现。
+本SDK提供两种版本的上传功能，在类QiniuSimpleUploader和QiniuResumableUploader中实现。
 
 ## QiniuSimpleUploader
 
@@ -14,7 +14,7 @@ QiniuSimpleUploader类提供了简单易用的iOS端文件上传功能。它的�
 
 	// 创建一个QiniuSimpleUploader实例。
 	// 需要保持这个变量，以便于用户取消某一个上传过程，通常创建的实例会保存为ViewController的成员变量。
-	_uploader = [[QiniuSimpleUploader uploaderWithToken:[self tokenWithScope:bucket]] retain];
+	_uploader = [[QiniuSimpleUploader uploaderWithToken:token] retain];
 	
 	// 设置消息器，消息接收器必须实现接口QiniuUploadDelegate。	
 	_uploader.delegate = self;
@@ -23,6 +23,22 @@ QiniuSimpleUploader类提供了简单易用的iOS端文件上传功能。它的�
 	[_uploader upload:filePath bucket:bucket key:key extraParams:nil];
 	
 如本例所示，如果我们需要保持该实例，我们需要手动的调用retain和release来避免内存出错或泄漏。
+
+这个例子里
+
+## QiniuResumableUploader
+
+QiniuResumableUploader的使用方法与QiniuSimpleUploader完全一致。两者的区别是QiniuSimpleUploader使用一次HTTP请求来进行文件上传，而QiniuResumableUploader则会对文件进行分块上传，因此QiniuResumableUploader适用于大文件上传，可以尽量避免因为文件过大而导致的请求过期问题。
+
+	// 创建一个QiniuResumableUploader实例。
+	// 需要保持这个变量，以便于用户取消某一个上传过程，通常创建的实例会保存为ViewController的成员变量。
+	_uploader = [[QiniuResumableUploader uploaderWithToken:token] retain];
+	
+	// 设置消息器，消息接收器必须实现接口QiniuUploadDelegate。	
+	_uploader.delegate = self;
+  
+	// 开始上传  
+	[_uploader upload:filePath bucket:bucket key:key extraParams:nil];
 
 ### 关于extraParams
 
@@ -57,7 +73,7 @@ extraParams是一个NSDictionary类型，upload方法会检查该字典中是否
 
 这个例子直接在内存中对整个文件进行CRC校验，不适合大文件的CRC计算。如果需要计算大文件的CRC32，可以参照zlib.h中建议的做法，伪代码如下：
 
-	 // zlib.h
+     // zlib.h
 
      uLong crc = crc32(0L, Z_NULL, 0);
 
@@ -99,11 +115,11 @@ extraParams是一个NSDictionary类型，upload方法会检查该字典中是否
 
 	@interface QiniuViewController : UIViewController<QiniuUploadDelegate, …>
 
-这个接口可以被QiniuSimpleUploader和QiniuResumableUploader共用。因此对于当前使用QiniuSimpleUploader的开发者，之后换成QiniuResumableUploader将只需要调整极少的代码。
+这个接口被QiniuSimpleUploader和QiniuResumableUploader共用。因此对于当前使用QiniuSimpleUploader的开发者，之后换成QiniuResumableUploader将只需要调整极少的代码。
 
 ## 使用方法
 
-因为当前的SDK只包含了3个.h文件和一个.m文件，为避免需要管理工程依赖关系，开发者完全可以直接将所提供的这几个文件直接添加到自己的工程中，当然，也需要添加对应的依赖包：JSONKit、ASIHttpRequest和GTMBase64。
+因为当前的SDK只包含了几个.h文件和.m文件，为避免需要管理工程依赖关系，开发者完全可以直接将所提供的这几个文件直接添加到自己的工程中，当然，也需要添加对应的依赖包：JSONKit、ASIHttpRequest和GTMBase64。
 
 本SDK附带的QiniuDemo是以静态库的方式使用QiniuSDK。如果开发者希望用这种方式引入QiniuSDK，可以借鉴一下QiniuDemo的工程设置。
 
@@ -112,4 +128,5 @@ extraParams是一个NSDictionary类型，upload方法会检查该字典中是否
 
 如果以静态链接库的方式使用该SDK，请注意您的工程设置中需要设置-ObjC标志，这是因为该SDK中使用了Objective-C category功能来实现JSON字符串的序列化和反序列化，而没有-ObjC标志的话Objective-C category功能将不能正常工作，错误表现为直接异常退出。
 
-另外，由于QiniuSimpleUploader采用的是单次HTTP请求发送整个文件内容的方法，因此并不适合用于上传大尺寸的文件。如果您有这方面的需求，请[联系我们](https://dev.qiniutek.com/feedback)。我们稍后也会在SDK中增加支持断点续传的上传类。
+另外，由于QiniuSimpleUploader采用的是单次HTTP请求发送整个文件内容的方法，因此并不适合用于上传大尺寸的文件。如果您有这方面的需求，请使用QiniuResumableUploader类。
+
