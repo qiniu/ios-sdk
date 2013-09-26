@@ -10,7 +10,6 @@
 #import "QiniuUtils.h"
 #import "ASIHTTPRequest/ASIFormDataRequest.h"
 #import "GTMBase64/GTMBase64.h"
-#import "JSONKit/JSONKit.h"
 
 #define kQiniuUserAgent  @"qiniu-ios-sdk"
 
@@ -137,10 +136,15 @@
                                          percent:1.0]; // Ensure a 100% progress message is sent.
         }
         if (self.delegate && [self.delegate respondsToSelector:@selector(uploadSucceeded:ret:)]) {
-            NSString *responseString = [request responseString];
-            if (responseString) {
-                NSDictionary *dic = [responseString objectFromJSONString];
-                [self.delegate uploadSucceeded:_filePath ret:dic];
+			NSData *responseData = [request responseData];
+			
+			if (responseData) {
+				NSDictionary *dic;
+				
+				dic = [NSJSONSerialization JSONObjectWithData:responseData
+													  options:kNilOptions
+														error:nil];
+				[self.delegate uploadSucceeded:_filePath ret:dic];
             }
         }
     } else { // Server returns an error code.

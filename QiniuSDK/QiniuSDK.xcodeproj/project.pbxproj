@@ -32,7 +32,6 @@
 		3015C2991653C0F7004F3042 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3015C2981653C0F7004F3042 /* libz.dylib */; };
 		3015C29B1653C11B004F3042 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3015C29A1653C11B004F3042 /* MobileCoreServices.framework */; };
 		3015C2AD1653D9E1004F3042 /* QiniuSimpleUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3015C2AB1653D9E1004F3042 /* QiniuSimpleUploader.m */; };
-		304F2476166F03A600E5F798 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 304F2474166F03A600E5F798 /* JSONKit.m */; };
 		304F248B166F151B00E5F798 /* QiniuPutPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 304F248A166F151B00E5F798 /* QiniuPutPolicy.m */; };
 		60A31F6B177D78DD00F919D7 /* QiniuUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A31F6A177D78DD00F919D7 /* QiniuUtils.m */; };
 		60EC754317811A330071C7AA /* QiniuPutExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 60EC754217811A330071C7AA /* QiniuPutExtra.m */; };
@@ -107,10 +106,6 @@
 		3015C29A1653C11B004F3042 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		3015C2AB1653D9E1004F3042 /* QiniuSimpleUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiniuSimpleUploader.m; sourceTree = SOURCE_ROOT; };
 		3015C2AC1653D9E1004F3042 /* QiniuSimpleUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiniuSimpleUploader.h; sourceTree = SOURCE_ROOT; };
-		304F2472166F03A600E5F798 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
-		304F2473166F03A600E5F798 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		304F2474166F03A600E5F798 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		304F2475166F03A600E5F798 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		304F2489166F151B00E5F798 /* QiniuPutPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiniuPutPolicy.h; sourceTree = "<group>"; };
 		304F248A166F151B00E5F798 /* QiniuPutPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiniuPutPolicy.m; sourceTree = "<group>"; };
 		60A31F69177D78DD00F919D7 /* QiniuUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QiniuUtils.h; path = ../QiniuUtils.h; sourceTree = "<group>"; };
@@ -151,7 +146,6 @@
 		30029D47165385F600167078 = {
 			isa = PBXGroup;
 			children = (
-				304F2471166F03A600E5F798 /* JSONKit */,
 				30029DED165387CE00167078 /* ASIHttpRequest */,
 				30029E0A165387CE00167078 /* GTMBase64 */,
 				30029D57165385F600167078 /* QiniuSDK */,
@@ -303,17 +297,6 @@
 			path = GTMBase64;
 			sourceTree = "<group>";
 		};
-		304F2471166F03A600E5F798 /* JSONKit */ = {
-			isa = PBXGroup;
-			children = (
-				304F2472166F03A600E5F798 /* CHANGELOG.md */,
-				304F2473166F03A600E5F798 /* JSONKit.h */,
-				304F2474166F03A600E5F798 /* JSONKit.m */,
-				304F2475166F03A600E5F798 /* README.md */,
-			);
-			path = JSONKit;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -424,7 +407,6 @@
 				30029E31165387CE00167078 /* ReachabilityAppDelegate.m in Sources */,
 				30029E32165387CE00167078 /* GTMBase64.m in Sources */,
 				3015C2AD1653D9E1004F3042 /* QiniuSimpleUploader.m in Sources */,
-				304F2476166F03A600E5F798 /* JSONKit.m in Sources */,
 				60A31F6B177D78DD00F919D7 /* QiniuUtils.m in Sources */,
 				60EC754317811A330071C7AA /* QiniuPutExtra.m in Sources */,
 			);
