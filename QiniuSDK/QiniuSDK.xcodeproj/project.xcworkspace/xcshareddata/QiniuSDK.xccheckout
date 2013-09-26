@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>601A64F0-3B70-4626-BD66-2BC98002EBA0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>QiniuSDK</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4CBAEBA7-6005-449C-978E-3B9044A22050</key>
+		<string>https://github.com/tecentmoon/ios-sdk.git</string>
+		<key>8BC9A36D-BA68-43EA-929C-0A60C6DD89CA</key>
+		<string>https://github.com/nicklockwood/Base64.git</string>
+		<key>ECC3B45B-202D-45AF-836C-2CD979AA4D09</key>
+		<string>https://github.com/pokeb/asi-http-request.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>QiniuSDK/QiniuSDK.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4CBAEBA7-6005-449C-978E-3B9044A22050</key>
+		<string>../../..</string>
+		<key>8BC9A36D-BA68-43EA-929C-0A60C6DD89CA</key>
+		<string>../../../Base64</string>
+		<key>ECC3B45B-202D-45AF-836C-2CD979AA4D09</key>
+		<string>../../../asi-http-request</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/tecentmoon/ios-sdk.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4CBAEBA7-6005-449C-978E-3B9044A22050</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ECC3B45B-202D-45AF-836C-2CD979AA4D09</string>
+			<key>IDESourceControlWCCName</key>
+			<string>asi-http-request</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8BC9A36D-BA68-43EA-929C-0A60C6DD89CA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Base64</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4CBAEBA7-6005-449C-978E-3B9044A22050</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios-sdk</string>
+		</dict>
+	</array>
+</dict>
+</plist>
