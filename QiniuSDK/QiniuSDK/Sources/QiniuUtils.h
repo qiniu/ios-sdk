@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ASIHTTPRequest.h"
+#import <ASIFormDataRequest.h>
 
 NSError *qiniuError(int errorCode, NSString *errorDescription);
 
