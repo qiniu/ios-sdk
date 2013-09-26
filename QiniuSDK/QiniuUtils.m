@@ -6,7 +6,6 @@
 //
 
 #import "QiniuUtils.h"
-#import "GTMBase64.h"
 
 #define kQiniuErrorKey     @"error"
 #define kQiniuErrorDomain  @"QiniuErrorDomain"

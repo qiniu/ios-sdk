@@ -8,8 +8,7 @@
 #import "QiniuConfig.h"
 #import "QiniuSimpleUploader.h"
 #import "QiniuUtils.h"
-#import "ASIHTTPRequest/ASIFormDataRequest.h"
-#import "GTMBase64/GTMBase64.h"
+#import "ASIFormDataRequest.h"
 
 #define kQiniuUserAgent  @"qiniu-ios-sdk"
 
