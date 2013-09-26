@@ -13,7 +13,7 @@
 		30029D6B165385F600167078 /* libQiniuSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30029D52165385F600167078 /* libQiniuSDK.a */; };
 		30029D71165385F600167078 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30029D6F165385F600167078 /* InfoPlist.strings */; };
 		30029D74165385F600167078 /* QiniuSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30029D73165385F600167078 /* QiniuSDKTests.m */; };
-		30029E32165387CE00167078 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 30029E0C165387CE00167078 /* GTMBase64.m */; };
+		30029E32165387CE00167078 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 30029E0C165387CE00167078 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3015C2921653C08E004F3042 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3015C2911653C08E004F3042 /* CFNetwork.framework */; };
 		3015C2931653C0B6004F3042 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3015C2911653C08E004F3042 /* CFNetwork.framework */; };
 		3015C2951653C0CA004F3042 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3015C2941653C0CA004F3042 /* CoreGraphics.framework */; };
@@ -23,15 +23,15 @@
 		3AF864F917F46D0300780F58 /* QiniuPutExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF864F317F46D0300780F58 /* QiniuPutExtra.m */; };
 		3AF864FA17F46D0300780F58 /* QiniuSimpleUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF864F517F46D0300780F58 /* QiniuSimpleUploader.m */; };
 		3AF864FB17F46D0300780F58 /* QiniuUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF864F817F46D0300780F58 /* QiniuUtils.m */; };
-		3AF865B917F46E0D00780F58 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8652417F46E0D00780F58 /* ASIAuthenticationDialog.m */; };
-		3AF865BA17F46E0D00780F58 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8652717F46E0D00780F58 /* ASIDataCompressor.m */; };
-		3AF865BB17F46E0D00780F58 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8652917F46E0D00780F58 /* ASIDataDecompressor.m */; };
-		3AF865BC17F46E0D00780F58 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8652B17F46E0D00780F58 /* ASIDownloadCache.m */; };
-		3AF865BD17F46E0D00780F58 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8652D17F46E0D00780F58 /* ASIFormDataRequest.m */; };
-		3AF865BE17F46E0D00780F58 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8652F17F46E0D00780F58 /* ASIHTTPRequest.m */; };
-		3AF865BF17F46E0D00780F58 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8653317F46E0D00780F58 /* ASIInputStream.m */; };
-		3AF865C017F46E0D00780F58 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8653517F46E0D00780F58 /* ASINetworkQueue.m */; };
-		3AF865DE17F46E0D00780F58 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8657B17F46E0D00780F58 /* Reachability.m */; };
+		3AF865B917F46E0D00780F58 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8652417F46E0D00780F58 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3AF865BA17F46E0D00780F58 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8652717F46E0D00780F58 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3AF865BB17F46E0D00780F58 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8652917F46E0D00780F58 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3AF865BC17F46E0D00780F58 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8652B17F46E0D00780F58 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3AF865BD17F46E0D00780F58 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8652D17F46E0D00780F58 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3AF865BE17F46E0D00780F58 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8652F17F46E0D00780F58 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3AF865BF17F46E0D00780F58 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8653317F46E0D00780F58 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3AF865C017F46E0D00780F58 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8653517F46E0D00780F58 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3AF865DE17F46E0D00780F58 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8657B17F46E0D00780F58 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3AF8660117F46FF600780F58 /* QiniuPutPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF865FF17F46FF600780F58 /* QiniuPutPolicy.m */; };
 /* End PBXBuildFile section */
 
@@ -507,6 +507,7 @@
 		30029D78165385F600167078 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/QiniuSDK.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QiniuSDK/QiniuSDK-Prefix.pch";
@@ -527,6 +528,7 @@
 		30029D79165385F600167078 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/QiniuSDK.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QiniuSDK/QiniuSDK-Prefix.pch";

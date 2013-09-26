@@ -17,7 +17,7 @@
 @implementation QiniuSimpleUploader
 
 + (id) uploaderWithToken:(NSString *)token {
-    return [[[self alloc] initWithToken:token] autorelease];
+    return [[self alloc] initWithToken:token];
 }
 
 // Must always override super's designated initializer.
@@ -36,18 +36,14 @@
 {
     self.delegate = nil;
 
-    [_token release];
     if (_request) {
         [_request clearDelegatesAndCancel];
-        [_request release];
     }
-    [_filePath  release];
-    [super dealloc];
+
 }
 
 - (void)setToken:(NSString *)token
 {
-    [_token autorelease];
     _token = [token copy];
 }
 
@@ -63,12 +59,8 @@
     // If upload is called multiple times, we should cancel previous procedure.
     if (_request) {
         [_request clearDelegatesAndCancel];
-        [_request release];
     }
     
-    if (_filePath) {
-        [_filePath  release];
-    }
     _filePath = [filePath copy];
     
     // progress

@@ -10,7 +10,7 @@
 @interface QiniuPutExtra : NSObject
 
 // user comtom params, refer to http://docs.qiniu.com/api/put.html#xVariables
-@property (retain, nonatomic) NSDictionary *params;
+@property (strong, nonatomic) NSDictionary *params;
 
 // specify file's mimeType, or server side automatically determine the mimeType.
 @property (copy, nonatomic) NSString *mimeType;
