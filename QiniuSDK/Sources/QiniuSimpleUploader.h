@@ -8,7 +8,8 @@
 #import <Foundation/Foundation.h>
 #import "QiniuUploadDelegate.h"
 #import "QiniuPutExtra.h"
-#import "ASIHttpRequest/ASIFormDataRequest.h"
+#import "ASIFormDataRequest.h"
+
 
 // Upload local file to Qiniu Cloud Service with one single request.
 @interface QiniuSimpleUploader : NSObject<ASIHTTPRequestDelegate, ASIProgressDelegate> {

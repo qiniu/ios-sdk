@@ -1,0 +1,6 @@
+[submodule "asi-http-request"]
+	path = asi-http-request
+	url = https://github.com/pokeb/asi-http-request.git
+[submodule "Base64"]
+	path = Base64
+	url = https://github.com/nicklockwood/Base64.git

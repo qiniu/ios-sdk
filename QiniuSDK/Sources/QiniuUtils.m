@@ -6,8 +6,6 @@
 //
 
 #import "QiniuUtils.h"
-#import "GTMBase64.h"
-#import "JSONKit.h"
 
 #define kQiniuErrorKey     @"error"
 #define kQiniuErrorDomain  @"QiniuErrorDomain"
@@ -22,9 +20,12 @@ NSError *qiniuErrorWithRequest(ASIHTTPRequest *request) {
     int errorCode = 400;
     
     if (request) {
-        NSString *responseString = [request responseString];
-        if (responseString) {
-            dic = [responseString objectFromJSONString];
+        NSData *responseData = [request responseData];
+		
+        if (responseData) {
+            dic = [NSJSONSerialization JSONObjectWithData:responseData
+												  options:kNilOptions
+													error:nil];
         }
         httpError = [request error];
         errorCode = [request responseStatusCode];

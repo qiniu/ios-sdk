@@ -8,9 +8,7 @@
 #import "QiniuConfig.h"
 #import "QiniuSimpleUploader.h"
 #import "QiniuUtils.h"
-#import "ASIHTTPRequest/ASIFormDataRequest.h"
-#import "GTMBase64/GTMBase64.h"
-#import "JSONKit/JSONKit.h"
+#import "ASIFormDataRequest.h"
 
 #define kQiniuUserAgent  @"qiniu-ios-sdk"
 
@@ -19,7 +17,7 @@
 @implementation QiniuSimpleUploader
 
 + (id) uploaderWithToken:(NSString *)token {
-    return [[[self alloc] initWithToken:token] autorelease];
+    return [[self alloc] initWithToken:token];
 }
 
 // Must always override super's designated initializer.
@@ -38,18 +36,14 @@
 {
     self.delegate = nil;
 
-    [_token release];
     if (_request) {
         [_request clearDelegatesAndCancel];
-        [_request release];
     }
-    [_filePath  release];
-    [super dealloc];
+
 }
 
 - (void)setToken:(NSString *)token
 {
-    [_token autorelease];
     _token = [token copy];
 }
 
@@ -65,12 +59,8 @@
     // If upload is called multiple times, we should cancel previous procedure.
     if (_request) {
         [_request clearDelegatesAndCancel];
-        [_request release];
     }
     
-    if (_filePath) {
-        [_filePath  release];
-    }
     _filePath = [filePath copy];
     
     // progress
@@ -137,10 +127,15 @@
                                          percent:1.0]; // Ensure a 100% progress message is sent.
         }
         if (self.delegate && [self.delegate respondsToSelector:@selector(uploadSucceeded:ret:)]) {
-            NSString *responseString = [request responseString];
-            if (responseString) {
-                NSDictionary *dic = [responseString objectFromJSONString];
-                [self.delegate uploadSucceeded:_filePath ret:dic];
+			NSData *responseData = [request responseData];
+			
+			if (responseData) {
+				NSDictionary *dic;
+				
+				dic = [NSJSONSerialization JSONObjectWithData:responseData
+													  options:kNilOptions
+														error:nil];
+				[self.delegate uploadSucceeded:_filePath ret:dic];
             }
         }
     } else { // Server returns an error code.

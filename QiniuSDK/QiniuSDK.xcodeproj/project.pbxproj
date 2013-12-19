@@ -9,33 +9,30 @@
 /* Begin PBXBuildFile section */
 		30029D56165385F600167078 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30029D55165385F600167078 /* Foundation.framework */; };
 		30029D65165385F600167078 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30029D64165385F600167078 /* SenTestingKit.framework */; };
-		30029D67165385F600167078 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30029D66165385F600167078 /* UIKit.framework */; };
 		30029D68165385F600167078 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30029D55165385F600167078 /* Foundation.framework */; };
 		30029D6B165385F600167078 /* libQiniuSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30029D52165385F600167078 /* libQiniuSDK.a */; };
 		30029D71165385F600167078 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30029D6F165385F600167078 /* InfoPlist.strings */; };
 		30029D74165385F600167078 /* QiniuSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30029D73165385F600167078 /* QiniuSDKTests.m */; };
-		30029E28165387CE00167078 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 30029DEF165387CE00167078 /* ASIAuthenticationDialog.m */; };
-		30029E29165387CE00167078 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 30029DF2165387CE00167078 /* ASIDataCompressor.m */; };
-		30029E2A165387CE00167078 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 30029DF4165387CE00167078 /* ASIDataDecompressor.m */; };
-		30029E2B165387CE00167078 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 30029DF6165387CE00167078 /* ASIDownloadCache.m */; };
-		30029E2C165387CE00167078 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 30029DF8165387CE00167078 /* ASIFormDataRequest.m */; };
-		30029E2D165387CE00167078 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 30029DFA165387CE00167078 /* ASIHTTPRequest.m */; };
-		30029E2E165387CE00167078 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 30029DFE165387CE00167078 /* ASIInputStream.m */; };
-		30029E2F165387CE00167078 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 30029E00165387CE00167078 /* ASINetworkQueue.m */; };
-		30029E30165387CE00167078 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 30029E05165387CE00167078 /* Reachability.m */; };
-		30029E31165387CE00167078 /* ReachabilityAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30029E07165387CE00167078 /* ReachabilityAppDelegate.m */; };
-		30029E32165387CE00167078 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 30029E0C165387CE00167078 /* GTMBase64.m */; };
 		3015C2921653C08E004F3042 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3015C2911653C08E004F3042 /* CFNetwork.framework */; };
 		3015C2931653C0B6004F3042 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3015C2911653C08E004F3042 /* CFNetwork.framework */; };
 		3015C2951653C0CA004F3042 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3015C2941653C0CA004F3042 /* CoreGraphics.framework */; };
 		3015C2971653C0E7004F3042 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3015C2961653C0E7004F3042 /* SystemConfiguration.framework */; };
 		3015C2991653C0F7004F3042 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3015C2981653C0F7004F3042 /* libz.dylib */; };
 		3015C29B1653C11B004F3042 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3015C29A1653C11B004F3042 /* MobileCoreServices.framework */; };
-		3015C2AD1653D9E1004F3042 /* QiniuSimpleUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3015C2AB1653D9E1004F3042 /* QiniuSimpleUploader.m */; };
-		304F2476166F03A600E5F798 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 304F2474166F03A600E5F798 /* JSONKit.m */; };
-		304F248B166F151B00E5F798 /* QiniuPutPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 304F248A166F151B00E5F798 /* QiniuPutPolicy.m */; };
-		60A31F6B177D78DD00F919D7 /* QiniuUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A31F6A177D78DD00F919D7 /* QiniuUtils.m */; };
-		60EC754317811A330071C7AA /* QiniuPutExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 60EC754217811A330071C7AA /* QiniuPutExtra.m */; };
+		3AF865B917F46E0D00780F58 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8652417F46E0D00780F58 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3AF865BA17F46E0D00780F58 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8652717F46E0D00780F58 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3AF865BB17F46E0D00780F58 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8652917F46E0D00780F58 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3AF865BC17F46E0D00780F58 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8652B17F46E0D00780F58 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3AF865BD17F46E0D00780F58 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8652D17F46E0D00780F58 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3AF865BE17F46E0D00780F58 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8652F17F46E0D00780F58 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3AF865BF17F46E0D00780F58 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8653317F46E0D00780F58 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3AF865C017F46E0D00780F58 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8653517F46E0D00780F58 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3AF865DE17F46E0D00780F58 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8657B17F46E0D00780F58 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3AF8661317F47B0C00780F58 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8660717F47B0C00780F58 /* GTMBase64.m */; };
+		3AF8661417F47B0C00780F58 /* QiniuPutPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8660A17F47B0C00780F58 /* QiniuPutPolicy.m */; };
+		3AF8661517F47B0C00780F58 /* QiniuPutExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8660D17F47B0C00780F58 /* QiniuPutExtra.m */; };
+		3AF8661617F47B0C00780F58 /* QiniuSimpleUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8660F17F47B0C00780F58 /* QiniuSimpleUploader.m */; };
+		3AF8661717F47B0C00780F58 /* QiniuUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF8661217F47B0C00780F58 /* QiniuUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,57 +63,52 @@
 		30029D59165385F600167078 /* QiniuSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QiniuSDK-Prefix.pch"; sourceTree = "<group>"; };
 		30029D63165385F600167078 /* QiniuSDKTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QiniuSDKTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30029D64165385F600167078 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		30029D66165385F600167078 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		30029D6E165385F600167078 /* QiniuSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QiniuSDKTests-Info.plist"; sourceTree = "<group>"; };
 		30029D70165385F600167078 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		30029D72165385F600167078 /* QiniuSDKTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QiniuSDKTests.h; sourceTree = "<group>"; };
 		30029D73165385F600167078 /* QiniuSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QiniuSDKTests.m; sourceTree = "<group>"; };
-		30029DEE165387CE00167078 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
-		30029DEF165387CE00167078 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
-		30029DF0165387CE00167078 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
-		30029DF1165387CE00167078 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
-		30029DF2165387CE00167078 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
-		30029DF3165387CE00167078 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
-		30029DF4165387CE00167078 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
-		30029DF5165387CE00167078 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
-		30029DF6165387CE00167078 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
-		30029DF7165387CE00167078 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
-		30029DF8165387CE00167078 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
-		30029DF9165387CE00167078 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
-		30029DFA165387CE00167078 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
-		30029DFB165387CE00167078 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
-		30029DFC165387CE00167078 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
-		30029DFD165387CE00167078 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
-		30029DFE165387CE00167078 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
-		30029DFF165387CE00167078 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
-		30029E00165387CE00167078 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
-		30029E01165387CE00167078 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
-		30029E04165387CE00167078 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		30029E05165387CE00167078 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		30029E06165387CE00167078 /* ReachabilityAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachabilityAppDelegate.h; sourceTree = "<group>"; };
-		30029E07165387CE00167078 /* ReachabilityAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachabilityAppDelegate.m; sourceTree = "<group>"; };
-		30029E0B165387CE00167078 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
-		30029E0C165387CE00167078 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
-		30029E0D165387CE00167078 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
-		3015C28C16539728004F3042 /* QiniuUploadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QiniuUploadDelegate.h; path = ../QiniuUploadDelegate.h; sourceTree = "<group>"; };
-		3015C28E16539A6F004F3042 /* QiniuConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QiniuConfig.h; path = ../QiniuConfig.h; sourceTree = "<group>"; };
 		3015C2911653C08E004F3042 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		3015C2941653C0CA004F3042 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3015C2961653C0E7004F3042 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3015C2981653C0F7004F3042 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		3015C29A1653C11B004F3042 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		3015C2AB1653D9E1004F3042 /* QiniuSimpleUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiniuSimpleUploader.m; sourceTree = SOURCE_ROOT; };
-		3015C2AC1653D9E1004F3042 /* QiniuSimpleUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiniuSimpleUploader.h; sourceTree = SOURCE_ROOT; };
-		304F2472166F03A600E5F798 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
-		304F2473166F03A600E5F798 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		304F2474166F03A600E5F798 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		304F2475166F03A600E5F798 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		304F2489166F151B00E5F798 /* QiniuPutPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiniuPutPolicy.h; sourceTree = "<group>"; };
-		304F248A166F151B00E5F798 /* QiniuPutPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiniuPutPolicy.m; sourceTree = "<group>"; };
-		60A31F69177D78DD00F919D7 /* QiniuUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QiniuUtils.h; path = ../QiniuUtils.h; sourceTree = "<group>"; };
-		60A31F6A177D78DD00F919D7 /* QiniuUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QiniuUtils.m; path = ../QiniuUtils.m; sourceTree = "<group>"; };
-		60EC754117811A330071C7AA /* QiniuPutExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiniuPutExtra.h; sourceTree = SOURCE_ROOT; };
-		60EC754217811A330071C7AA /* QiniuPutExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiniuPutExtra.m; sourceTree = SOURCE_ROOT; };
+		3AF8652317F46E0D00780F58 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		3AF8652417F46E0D00780F58 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		3AF8652517F46E0D00780F58 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		3AF8652617F46E0D00780F58 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		3AF8652717F46E0D00780F58 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		3AF8652817F46E0D00780F58 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		3AF8652917F46E0D00780F58 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		3AF8652A17F46E0D00780F58 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		3AF8652B17F46E0D00780F58 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		3AF8652C17F46E0D00780F58 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		3AF8652D17F46E0D00780F58 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		3AF8652E17F46E0D00780F58 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		3AF8652F17F46E0D00780F58 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		3AF8653017F46E0D00780F58 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		3AF8653117F46E0D00780F58 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		3AF8653217F46E0D00780F58 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		3AF8653317F46E0D00780F58 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		3AF8653417F46E0D00780F58 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		3AF8653517F46E0D00780F58 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		3AF8653617F46E0D00780F58 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		3AF8657A17F46E0D00780F58 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3AF8657B17F46E0D00780F58 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		3AF865A817F46E0D00780F58 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3AF865B717F46E0D00780F58 /* README.textile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.textile; sourceTree = "<group>"; };
+		3AF8660617F47B0C00780F58 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		3AF8660717F47B0C00780F58 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		3AF8660817F47B0C00780F58 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		3AF8660917F47B0C00780F58 /* QiniuPutPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiniuPutPolicy.h; sourceTree = "<group>"; };
+		3AF8660A17F47B0C00780F58 /* QiniuPutPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiniuPutPolicy.m; sourceTree = "<group>"; };
+		3AF8660B17F47B0C00780F58 /* QiniuConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiniuConfig.h; sourceTree = "<group>"; };
+		3AF8660C17F47B0C00780F58 /* QiniuPutExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiniuPutExtra.h; sourceTree = "<group>"; };
+		3AF8660D17F47B0C00780F58 /* QiniuPutExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiniuPutExtra.m; sourceTree = "<group>"; };
+		3AF8660E17F47B0C00780F58 /* QiniuSimpleUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiniuSimpleUploader.h; sourceTree = "<group>"; };
+		3AF8660F17F47B0C00780F58 /* QiniuSimpleUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiniuSimpleUploader.m; sourceTree = "<group>"; };
+		3AF8661017F47B0C00780F58 /* QiniuUploadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiniuUploadDelegate.h; sourceTree = "<group>"; };
+		3AF8661117F47B0C00780F58 /* QiniuUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiniuUtils.h; sourceTree = "<group>"; };
+		3AF8661217F47B0C00780F58 /* QiniuUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiniuUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +131,6 @@
 				3015C2951653C0CA004F3042 /* CoreGraphics.framework in Frameworks */,
 				3015C2931653C0B6004F3042 /* CFNetwork.framework in Frameworks */,
 				30029D65165385F600167078 /* SenTestingKit.framework in Frameworks */,
-				30029D67165385F600167078 /* UIKit.framework in Frameworks */,
 				30029D68165385F600167078 /* Foundation.framework in Frameworks */,
 				30029D6B165385F600167078 /* libQiniuSDK.a in Frameworks */,
 			);
@@ -151,9 +142,7 @@
 		30029D47165385F600167078 = {
 			isa = PBXGroup;
 			children = (
-				304F2471166F03A600E5F798 /* JSONKit */,
-				30029DED165387CE00167078 /* ASIHttpRequest */,
-				30029E0A165387CE00167078 /* GTMBase64 */,
+				30029DED165387CE00167078 /* Vendors */,
 				30029D57165385F600167078 /* QiniuSDK */,
 				30029D6C165385F600167078 /* QiniuSDKTests */,
 				30029D54165385F600167078 /* Frameworks */,
@@ -180,7 +169,6 @@
 				3015C2911653C08E004F3042 /* CFNetwork.framework */,
 				30029D55165385F600167078 /* Foundation.framework */,
 				30029D64165385F600167078 /* SenTestingKit.framework */,
-				30029D66165385F600167078 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -188,15 +176,8 @@
 		30029D57165385F600167078 /* QiniuSDK */ = {
 			isa = PBXGroup;
 			children = (
-				3015C2AC1653D9E1004F3042 /* QiniuSimpleUploader.h */,
-				3015C2AB1653D9E1004F3042 /* QiniuSimpleUploader.m */,
-				60A31F69177D78DD00F919D7 /* QiniuUtils.h */,
-				60A31F6A177D78DD00F919D7 /* QiniuUtils.m */,
-				3015C28E16539A6F004F3042 /* QiniuConfig.h */,
-				3015C28C16539728004F3042 /* QiniuUploadDelegate.h */,
+				3AF8660317F47B0C00780F58 /* Sources */,
 				30029D58165385F600167078 /* Supporting Files */,
-				60EC754117811A330071C7AA /* QiniuPutExtra.h */,
-				60EC754217811A330071C7AA /* QiniuPutExtra.m */,
 			);
 			path = QiniuSDK;
 			sourceTree = "<group>";
@@ -212,8 +193,6 @@
 		30029D6C165385F600167078 /* QiniuSDKTests */ = {
 			isa = PBXGroup;
 			children = (
-				304F2489166F151B00E5F798 /* QiniuPutPolicy.h */,
-				304F248A166F151B00E5F798 /* QiniuPutPolicy.m */,
 				30029D72165385F600167078 /* QiniuSDKTests.h */,
 				30029D73165385F600167078 /* QiniuSDKTests.m */,
 				30029D6D165385F600167078 /* Supporting Files */,
@@ -230,88 +209,105 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		30029DED165387CE00167078 /* ASIHttpRequest */ = {
+		30029DED165387CE00167078 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
-				30029DEE165387CE00167078 /* ASIAuthenticationDialog.h */,
-				30029DEF165387CE00167078 /* ASIAuthenticationDialog.m */,
-				30029DF0165387CE00167078 /* ASICacheDelegate.h */,
-				30029DF1165387CE00167078 /* ASIDataCompressor.h */,
-				30029DF2165387CE00167078 /* ASIDataCompressor.m */,
-				30029DF3165387CE00167078 /* ASIDataDecompressor.h */,
-				30029DF4165387CE00167078 /* ASIDataDecompressor.m */,
-				30029DF5165387CE00167078 /* ASIDownloadCache.h */,
-				30029DF6165387CE00167078 /* ASIDownloadCache.m */,
-				30029DF7165387CE00167078 /* ASIFormDataRequest.h */,
-				30029DF8165387CE00167078 /* ASIFormDataRequest.m */,
-				30029DF9165387CE00167078 /* ASIHTTPRequest.h */,
-				30029DFA165387CE00167078 /* ASIHTTPRequest.m */,
-				30029DFB165387CE00167078 /* ASIHTTPRequestConfig.h */,
-				30029DFC165387CE00167078 /* ASIHTTPRequestDelegate.h */,
-				30029DFD165387CE00167078 /* ASIInputStream.h */,
-				30029DFE165387CE00167078 /* ASIInputStream.m */,
-				30029DFF165387CE00167078 /* ASINetworkQueue.h */,
-				30029E00165387CE00167078 /* ASINetworkQueue.m */,
-				30029E01165387CE00167078 /* ASIProgressDelegate.h */,
-				30029E02165387CE00167078 /* ASIWebPageRequest */,
-				30029E03165387CE00167078 /* CloudFiles */,
-				30029E04165387CE00167078 /* Reachability.h */,
-				30029E05165387CE00167078 /* Reachability.m */,
-				30029E06165387CE00167078 /* ReachabilityAppDelegate.h */,
-				30029E07165387CE00167078 /* ReachabilityAppDelegate.m */,
-				30029E08165387CE00167078 /* S3 */,
-				30029E09165387CE00167078 /* Tests */,
+				3AF8651B17F46E0D00780F58 /* asi-http-request */,
 			);
+			name = Vendors;
 			path = ASIHttpRequest;
 			sourceTree = "<group>";
 		};
-		30029E02165387CE00167078 /* ASIWebPageRequest */ = {
+		3AF8651B17F46E0D00780F58 /* asi-http-request */ = {
 			isa = PBXGroup;
 			children = (
+				3AF8652217F46E0D00780F58 /* Classes */,
+				3AF8657617F46E0D00780F58 /* External */,
+				3AF865A817F46E0D00780F58 /* LICENSE */,
+				3AF865B717F46E0D00780F58 /* README.textile */,
 			);
-			path = ASIWebPageRequest;
+			name = "asi-http-request";
+			path = "../../asi-http-request";
 			sourceTree = "<group>";
 		};
-		30029E03165387CE00167078 /* CloudFiles */ = {
+		3AF8652217F46E0D00780F58 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3AF8652317F46E0D00780F58 /* ASIAuthenticationDialog.h */,
+				3AF8652417F46E0D00780F58 /* ASIAuthenticationDialog.m */,
+				3AF8652517F46E0D00780F58 /* ASICacheDelegate.h */,
+				3AF8652617F46E0D00780F58 /* ASIDataCompressor.h */,
+				3AF8652717F46E0D00780F58 /* ASIDataCompressor.m */,
+				3AF8652817F46E0D00780F58 /* ASIDataDecompressor.h */,
+				3AF8652917F46E0D00780F58 /* ASIDataDecompressor.m */,
+				3AF8652A17F46E0D00780F58 /* ASIDownloadCache.h */,
+				3AF8652B17F46E0D00780F58 /* ASIDownloadCache.m */,
+				3AF8652C17F46E0D00780F58 /* ASIFormDataRequest.h */,
+				3AF8652D17F46E0D00780F58 /* ASIFormDataRequest.m */,
+				3AF8652E17F46E0D00780F58 /* ASIHTTPRequest.h */,
+				3AF8652F17F46E0D00780F58 /* ASIHTTPRequest.m */,
+				3AF8653017F46E0D00780F58 /* ASIHTTPRequestConfig.h */,
+				3AF8653117F46E0D00780F58 /* ASIHTTPRequestDelegate.h */,
+				3AF8653217F46E0D00780F58 /* ASIInputStream.h */,
+				3AF8653317F46E0D00780F58 /* ASIInputStream.m */,
+				3AF8653417F46E0D00780F58 /* ASINetworkQueue.h */,
+				3AF8653517F46E0D00780F58 /* ASINetworkQueue.m */,
+				3AF8653617F46E0D00780F58 /* ASIProgressDelegate.h */,
 			);
-			path = CloudFiles;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		30029E08165387CE00167078 /* S3 */ = {
+		3AF8657617F46E0D00780F58 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				3AF8657917F46E0D00780F58 /* Reachability */,
 			);
-			path = S3;
+			path = External;
 			sourceTree = "<group>";
 		};
-		30029E09165387CE00167078 /* Tests */ = {
+		3AF8657917F46E0D00780F58 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
+				3AF8657A17F46E0D00780F58 /* Reachability.h */,
+				3AF8657B17F46E0D00780F58 /* Reachability.m */,
 			);
-			path = Tests;
+			path = Reachability;
 			sourceTree = "<group>";
 		};
-		30029E0A165387CE00167078 /* GTMBase64 */ = {
+		3AF8660317F47B0C00780F58 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				30029E0B165387CE00167078 /* GTMBase64.h */,
-				30029E0C165387CE00167078 /* GTMBase64.m */,
-				30029E0D165387CE00167078 /* GTMDefines.h */,
+				3AF8660417F47B0C00780F58 /* External */,
+				3AF8660B17F47B0C00780F58 /* QiniuConfig.h */,
+				3AF8660C17F47B0C00780F58 /* QiniuPutExtra.h */,
+				3AF8660D17F47B0C00780F58 /* QiniuPutExtra.m */,
+				3AF8660E17F47B0C00780F58 /* QiniuSimpleUploader.h */,
+				3AF8660F17F47B0C00780F58 /* QiniuSimpleUploader.m */,
+				3AF8661017F47B0C00780F58 /* QiniuUploadDelegate.h */,
+				3AF8661117F47B0C00780F58 /* QiniuUtils.h */,
+				3AF8661217F47B0C00780F58 /* QiniuUtils.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3AF8660417F47B0C00780F58 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				3AF8660517F47B0C00780F58 /* GTMBase64 */,
+				3AF8660917F47B0C00780F58 /* QiniuPutPolicy.h */,
+				3AF8660A17F47B0C00780F58 /* QiniuPutPolicy.m */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		3AF8660517F47B0C00780F58 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				3AF8660617F47B0C00780F58 /* GTMBase64.h */,
+				3AF8660717F47B0C00780F58 /* GTMBase64.m */,
+				3AF8660817F47B0C00780F58 /* GTMDefines.h */,
 			);
 			path = GTMBase64;
-			sourceTree = "<group>";
-		};
-		304F2471166F03A600E5F798 /* JSONKit */ = {
-			isa = PBXGroup;
-			children = (
-				304F2472166F03A600E5F798 /* CHANGELOG.md */,
-				304F2473166F03A600E5F798 /* JSONKit.h */,
-				304F2474166F03A600E5F798 /* JSONKit.m */,
-				304F2475166F03A600E5F798 /* README.md */,
-			);
-			path = JSONKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +364,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				English,
 			);
 			mainGroup = 30029D47165385F600167078;
 			productRefGroup = 30029D53165385F600167078 /* Products */;
@@ -412,21 +409,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30029E28165387CE00167078 /* ASIAuthenticationDialog.m in Sources */,
-				30029E29165387CE00167078 /* ASIDataCompressor.m in Sources */,
-				30029E2A165387CE00167078 /* ASIDataDecompressor.m in Sources */,
-				30029E2B165387CE00167078 /* ASIDownloadCache.m in Sources */,
-				30029E2C165387CE00167078 /* ASIFormDataRequest.m in Sources */,
-				30029E2D165387CE00167078 /* ASIHTTPRequest.m in Sources */,
-				30029E2E165387CE00167078 /* ASIInputStream.m in Sources */,
-				30029E2F165387CE00167078 /* ASINetworkQueue.m in Sources */,
-				30029E30165387CE00167078 /* Reachability.m in Sources */,
-				30029E31165387CE00167078 /* ReachabilityAppDelegate.m in Sources */,
-				30029E32165387CE00167078 /* GTMBase64.m in Sources */,
-				3015C2AD1653D9E1004F3042 /* QiniuSimpleUploader.m in Sources */,
-				304F2476166F03A600E5F798 /* JSONKit.m in Sources */,
-				60A31F6B177D78DD00F919D7 /* QiniuUtils.m in Sources */,
-				60EC754317811A330071C7AA /* QiniuPutExtra.m in Sources */,
+				3AF865BA17F46E0D00780F58 /* ASIDataCompressor.m in Sources */,
+				3AF865B917F46E0D00780F58 /* ASIAuthenticationDialog.m in Sources */,
+				3AF865DE17F46E0D00780F58 /* Reachability.m in Sources */,
+				3AF865BD17F46E0D00780F58 /* ASIFormDataRequest.m in Sources */,
+				3AF865BB17F46E0D00780F58 /* ASIDataDecompressor.m in Sources */,
+				3AF865BF17F46E0D00780F58 /* ASIInputStream.m in Sources */,
+				3AF865C017F46E0D00780F58 /* ASINetworkQueue.m in Sources */,
+				3AF865BE17F46E0D00780F58 /* ASIHTTPRequest.m in Sources */,
+				3AF865BC17F46E0D00780F58 /* ASIDownloadCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,8 +425,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AF8661717F47B0C00780F58 /* QiniuUtils.m in Sources */,
 				30029D74165385F600167078 /* QiniuSDKTests.m in Sources */,
-				304F248B166F151B00E5F798 /* QiniuPutPolicy.m in Sources */,
+				3AF8661517F47B0C00780F58 /* QiniuPutExtra.m in Sources */,
+				3AF8661317F47B0C00780F58 /* GTMBase64.m in Sources */,
+				3AF8661417F47B0C00780F58 /* QiniuPutPolicy.m in Sources */,
+				3AF8661617F47B0C00780F58 /* QiniuSimpleUploader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +462,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -493,6 +489,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
@@ -509,9 +506,18 @@
 		30029D78165385F600167078 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/QiniuSDK.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QiniuSDK/QiniuSDK-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/../asi-http-request/Classes\"",
+					/usr/include/libxml2,
+					"\"$(SRCROOT)/../asi-http-request/External/Reachability\"",
+				);
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -521,9 +527,18 @@
 		30029D79165385F600167078 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/QiniuSDK.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QiniuSDK/QiniuSDK-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/../asi-http-request/Classes\"",
+					/usr/include/libxml2,
+					"\"$(SRCROOT)/../asi-http-request/External/Reachability\"",
+				);
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
