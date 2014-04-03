@@ -117,8 +117,10 @@
     __block QiniuBlkputRet *blockPutRet;
     __block UInt32 retryTime = self.retryTime;
     __block BOOL isMkblock = YES;
-    
-    QNCompleteBlock __block chunkComplete = ^(AFHTTPRequestOperation *operation, NSError *error)
+  
+  __weak __block QNCompleteBlock weak_chunkComplete;
+  QNCompleteBlock chunkComplete;
+    weak_chunkComplete = chunkComplete = ^(AFHTTPRequestOperation *operation, NSError *error)
     {
         if (error != nil) {
             
@@ -150,7 +152,7 @@
             offsetBase:offsetBase
             bodyLength:bodyLength
               progress:progressBlock
-              complete:chunkComplete];
+              complete:weak_chunkComplete];
     };
     
     [self mkblock:mappedData
