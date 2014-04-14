@@ -90,8 +90,10 @@
             UInt32 offbase = blockIndex << QiniuBlockBits;
             __block UInt32 blockSize1;
             __block UInt32 retryTime = extra.client.retryTime;
-            
-            QNCompleteBlock __block blockComplete = ^(AFHTTPRequestOperation *operation, NSError *error)
+          
+          __weak __block QNCompleteBlock weak_blockComplete;
+          QNCompleteBlock blockComplete;
+            weak_blockComplete = blockComplete = ^(AFHTTPRequestOperation *operation, NSError *error)
             {
                 
                 /****
@@ -114,7 +116,7 @@
                                               [self.delegate uploadProgressUpdated:filePath percent:percent];
                                           }
                                       }
-                                      complete:blockComplete];
+                                      complete:weak_blockComplete];
                     } else {
                         if (extra.notifyErr != nil) {
                             extra.notifyErr(blockIndex, blockSize1, error);
