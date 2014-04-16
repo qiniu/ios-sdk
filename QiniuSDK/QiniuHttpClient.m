@@ -83,6 +83,46 @@
     return operation;
 }
 
+- (AFHTTPRequestOperation *)uploadFileData:(NSData *)fileData
+                                       key:(NSString *)key
+                                     token:(NSString *)token
+                                     extra:(QiniuPutExtra *)extra
+                                  progress:(void (^)(float percent))progressBlock
+                                  complete:(QNObjectResultBlock)complete{
+    
+    NSParameterAssert(token);
+    
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    
+    if (key && ![key isEqualToString:kQiniuUndefinedKey]) {
+        parameters[@"key"] = key;
+    }
+    
+    parameters[@"token"] = token;
+    
+    if (extra) {
+        [parameters addEntriesFromDictionary:extra.convertToPostParams];
+    }
+    
+    NSMutableURLRequest *request = [self.requestSerializer multipartFormRequestWithMethod:@"POST" URLString:kQiniuUpHost parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        
+        [formData appendPartWithFileData:fileData name:@"file" fileName:key mimeType:@"image/jpeg"];
+        
+    }];
+    
+    AFHTTPRequestOperation *operation = [self HTTPRequestOperationWithRequest:request
+                                                                      success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                                                                          complete(operation,nil);
+                                                                      } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                                                          complete(operation,error);
+                                                                      }];
+    
+    [operation setUploadProgressBlock:^(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite) {
+        progressBlock((float)totalBytesWritten / (float)totalBytesExpectedToWrite);
+    }];
+    [self.operationQueue addOperation:operation];
+    return operation;
+}
 
 - (AFHTTPRequestOperation *)HTTPRequestOperationWithRequest:(NSURLRequest *)theRequest
                                                     success:(void (^)(AFHTTPRequestOperation *, id))success

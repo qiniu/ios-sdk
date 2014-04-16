@@ -32,5 +32,8 @@
                 key:(NSString *)key
               extra:(QiniuPutExtra *)extra;
 
+// Upload data to qiniu cloud storage, the extra is optional.
+- (void) uploadFileData:(NSData *)fileData key:(NSString *)key extra:(QiniuPutExtra *)extra;
+
 @end
 

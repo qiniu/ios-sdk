@@ -17,12 +17,20 @@ typedef void (^QNObjectResultBlock)(id object, NSError *error);
 #define QiniuClient [QiniuHttpClient manager]
 
 @interface QiniuHttpClient : AFHTTPRequestOperationManager
+
 - (AFHTTPRequestOperation *)uploadFile:(NSString *)filePath
                                    key:(NSString *)key
                                  token:(NSString *)token
                                  extra:(QiniuPutExtra *)extra
                               progress:(void (^)(float percent))progressBlock
                               complete:(QNObjectResultBlock)complete;
+
+- (AFHTTPRequestOperation *)uploadFileData:(NSData *)fileData
+                                       key:(NSString *)key
+                                     token:(NSString *)token
+                                     extra:(QiniuPutExtra *)extra
+                                  progress:(void (^)(float percent))progressBlock
+                                  complete:(QNObjectResultBlock)complete;
 @end
 
 
