@@ -38,7 +38,7 @@
     return self;
 }
 
-- (void) uploadFile:(NSString *)filePath
+- (void)uploadFile:(NSString *)filePath
                 key:(NSString *)key
               extra:(QiniuPutExtra *)extra
 {
@@ -60,7 +60,7 @@
     
 }
 
-- (void) uploadFileData:(NSData *)fileData
+- (void)uploadFileData:(NSData *)fileData
                     key:(NSString *)key
                   extra:(QiniuPutExtra *)extra
 {
