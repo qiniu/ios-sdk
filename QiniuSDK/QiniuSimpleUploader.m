@@ -36,7 +36,7 @@
     return self;
 }
 
-- (void) uploadFile:(NSString *)filePath
+- (void)uploadFile:(NSString *)filePath
                 key:(NSString *)key
               extra:(QiniuPutExtra *)extra
 {
@@ -78,6 +78,26 @@
                    progress:weakProgressBlock
                    complete:weakCompleteBlock];
 
+}
+
+- (void)uploadFileData:(NSData *)fileData
+                    key:(NSString *)key
+                  extra:(QiniuPutExtra *)extra
+{
+    [QiniuClient
+     uploadFileData:fileData
+     key:key
+     token:self.token
+     extra:extra progress:^(float percent) {
+         [self.delegate uploadProgressUpdated:nil percent:percent];
+     } complete:^(AFHTTPRequestOperation *operation, NSError *error) {
+         if (error) {
+             [self.delegate uploadFailed:nil error:error];
+         }else{
+             NSDictionary *resp = operation.responseObject;
+             [self.delegate uploadSucceeded:nil ret:resp];
+         }
+     }];
 }
 
 @end

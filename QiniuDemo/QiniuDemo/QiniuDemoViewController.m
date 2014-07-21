@@ -42,6 +42,14 @@
 - (IBAction)simpleUpload:(id)sender {
 
     [self.sUploader uploadFile:_filePath key:[NSString stringWithFormat:@"test-%@.png", [self timeString]] extra:nil];
+    
+    //if we use UIImage to upload
+    
+    /*
+    UIImage *image = [UIImage imageNamed:@"Sample_image"];
+     NSData *imageData = UIImageJPEGRepresentation(image, 1.0);
+     [self.sUploader uploadFileData:imageData key:[NSString stringWithFormat:@"test-%@.png", [self timeString]] extra:nil];
+    */
 }
 
 - (IBAction)download:(id)sender {
